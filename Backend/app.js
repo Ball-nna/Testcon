@@ -19,7 +19,7 @@ mongoose.connect(process.env.DATABASE_URL, {
 	useUnifiedTopology: true
 })
 //Connect Frontend
-app.use(express.static(__dirname+'/Frontend'))
+app.use(express.static(__dirname+'/build'))
 //For check authen
 app.post('/authen',jsonParser,(req,res,next)=>{
 	try{
